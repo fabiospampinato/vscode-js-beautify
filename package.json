@@ -5,7 +5,7 @@
   "repository": "github:fabiospampinato/vscode-js-beautify",
   "description": "A little wrapper around \"js-beautify\" for conveniently beautifying CSS/HTML/JS files.",
   "icon": "resources/logo-128x128.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "contributes": {
     "commands": [
