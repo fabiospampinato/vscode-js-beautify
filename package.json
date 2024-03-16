@@ -1,8 +1,8 @@
 {
-  "name": "vscode-beautify",
-  "displayName": "Beautify",
+  "name": "vscode-js-beautify",
+  "displayName": "JS Beautify",
   "publisher": "fabiospampinato",
-  "repository": "github:fabiospampinato/vscode-beautify",
+  "repository": "github:fabiospampinato/vscode-js-beautify",
   "description": "A little wrapper around \"js-beautify\" for conveniently beautifying CSS/HTML/JS files.",
   "icon": "resources/logo-128x128.png",
   "version": "1.0.0",
