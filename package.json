@@ -1,0 +1,58 @@
+{
+  "name": "vscode-beautify",
+  "displayName": "Beautify",
+  "publisher": "fabiospampinato",
+  "repository": "github:fabiospampinato/vscode-beautify",
+  "description": "A little wrapper around \"js-beautify\" for conveniently beautifying CSS/HTML/JS files.",
+  "icon": "resources/logo-128x128.png",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "beautify.file",
+        "title": "Beautify: File"
+      }
+    ]
+  },
+  "scripts": {
+    "bundle:dev": "tsex bundle --external vscode --format cjs --platform node --no-declare",
+    "bundle:prod": "tsex bundle --external vscode --format cjs --platform node --minify",
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "debug": "code --extensionDevelopmentPath $PWD --inspect-extensions 9222",
+    "package": "vsce package",
+    "prepublishOnly": "scex -bs clean bundle:prod",
+    "vscode:prepublish": "scex -bs clean bundle:prod",
+    "dev": "scex -bs bundle:dev debug",
+    "prod": "scex -bs bundle:prod debug"
+  },
+  "categories": [
+    "Other"
+  ],
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "keywords": [
+    "vscode",
+    "vsc",
+    "extension",
+    "beautify",
+    "css",
+    "html",
+    "js"
+  ],
+  "dependencies": {
+    "js-beautify": "^1.15.1",
+    "vscode-extras": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/js-beautify": "^1.14.3",
+    "@types/node": "^18.19.24",
+    "@types/vscode": "^1.87.0",
+    "esbuild": "0.20.2",
+    "scex": "^1.1.0",
+    "tsex": "^3.2.1",
+    "typescript": "^5.4.2"
+  }
+}
